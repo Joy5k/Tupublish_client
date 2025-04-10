@@ -7,12 +7,5 @@ export default defineConfig({
     watch: {
       ignored: ["**/node_modules/**", "**/.git/**"],
     },
-    proxy: {
-      '/api': {
-        target: 'https://testingproject-bay.vercel.app', // Your backend URL
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '/api'),
-      },
-    },
   },
 });

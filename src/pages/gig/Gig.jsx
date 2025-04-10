@@ -1,6 +1,5 @@
 import React from "react";
 import "./Gig.scss";
-import { Slider } from "infinite-react-carousel/lib";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest.js";
@@ -16,7 +15,7 @@ function Gig() {
         return res.data;
       }),
   });
-
+console.log(data,"gig data")
   const userId = data?.userId;
 
   const {
@@ -67,11 +66,7 @@ function Gig() {
                 )}
               </div>
             )}
-            <Slider slidesToShow={1} arrowsScroll={1} className="slider">
-              {data.images.map((img) => (
-                <img key={img} src={img} alt="" />
-              ))}
-            </Slider>
+          
             <h2>About This Gig</h2>
             <p>{data.desc}</p>
             {isLoadingUser ? (
