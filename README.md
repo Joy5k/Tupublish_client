@@ -74,6 +74,7 @@ The project is deployed on Vercel:
 **Mehedi Hasan Joy**  
 📧 Email: mmehedihasanjoyv@gmail.com  
 💼 LinkedIn: [https://www.linkedin.com/in/eng-mehedi-hasan-joy]
+
 🐙 GitHub: [https://github.com/Joy5k] 
 
 ## License
